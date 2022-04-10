@@ -2,7 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QAudioDevice>
+#include <QAudioFormat>
+#include <QAudioSink>
+#include <QMediaDevices>
+
 #include <memory>
+
+#include "circularbuffer.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,7 +23,21 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_frequencySlider_valueChanged(int value);
+    void on_bytesRead(qint64 pos, qint64 count);
+
 private:
     std::unique_ptr <Ui::MainWindow> ui;
+    QByteArray byteArray;
+    CircularBuffer buffer;
+    QAudioFormat audioFormat;
+    QAudioDevice device;
+    QAudioSink audio;
+
+    constexpr static const qreal sampleRate = 44100;
+    qreal frequency = 440;
+
+    quint64 phase = 0;
 };
 #endif // MAINWINDOW_H
