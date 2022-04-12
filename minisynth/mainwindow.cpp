@@ -20,8 +20,12 @@ MainWindow::MainWindow(QWidget *parent)
     , audioFormat(getAudioFormat(sampleRate))
     , device(QMediaDevices::defaultAudioOutput())
     , audio(device, audioFormat)
+    , piano(nullptr)
 {
     ui->setupUi(this);
+
+    ui->verticalLayout->addWidget(&piano);
+
     buffer.open(QIODevice::ReadWrite);
 
     // Verify the raw audio format is supported by the device

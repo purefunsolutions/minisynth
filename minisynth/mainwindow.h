@@ -10,6 +10,7 @@
 #include <memory>
 
 #include "circularbuffer.h"
+#include "pianokeyboard.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -34,6 +35,7 @@ private:
     QAudioFormat audioFormat;
     QAudioDevice device;
     QAudioSink audio;
+    PianoKeyboard piano;
 
     constexpr static const qreal sampleRate = 44100;
     qreal frequency = 440;

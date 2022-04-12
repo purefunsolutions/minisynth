@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PianoKeyboard</class>
+ <widget class="QWidget" name="PianoKeyboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>893</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btnC">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="btnCs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>C#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btnD">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="btnDs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>D#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QPushButton" name="btnE">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>E</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QPushButton" name="btnEs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>E#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QPushButton" name="btnF">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QPushButton" name="btnFs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>F#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QPushButton" name="btnG">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>G</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <widget class="QPushButton" name="btnGs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>G#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="10">
+    <widget class="QPushButton" name="btnH">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>H</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="11">
+    <widget class="QPushButton" name="btnHs">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>H#</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="12">
+    <widget class="QPushButton" name="btnA">
+     <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
+     </property>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

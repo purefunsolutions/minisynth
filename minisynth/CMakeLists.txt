@@ -21,6 +21,9 @@ set(PROJECT_SOURCES
         mainwindow.ui
         circularbuffer.cpp
         circularbuffer.h
+        pianokeyboard.h
+        pianokeyboard.cpp
+        pianokeyboard.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
