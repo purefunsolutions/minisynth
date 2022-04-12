@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
+#include <QtMath>
+
 static QAudioFormat getAudioFormat(qreal sampleRate)
 {
     // Set QAudioFormat parameteres
@@ -52,6 +54,16 @@ MainWindow::MainWindow(QWidget *parent)
             this,
             &MainWindow::on_bytesRead);
 
+    connect(&piano,
+            &PianoKeyboard::pressed,
+            this,
+            &MainWindow::pianokey_pressed);
+
+    connect(&piano,
+            &PianoKeyboard::released,
+            this,
+            &MainWindow::pianokey_released);
+
     audio.start(&buffer);
 }
 
@@ -85,4 +97,18 @@ void MainWindow::on_bytesRead(qint64 pos, qint64 count)
         byteArray[4 * i + 2] = byte02;
         byteArray[4 * i + 3] = byte03;
     }
+}
+
+void MainWindow::pianokey_pressed(PianoKey key)
+{
+    qDebug() << "PianoKey pressed: " << key;
+
+    const qreal baseOctave = 48.0;
+    const qreal keyReal = static_cast <qreal> (key);
+    frequency = 440.0 * qPow(2, ((baseOctave + keyReal) - 49) / 12);
+}
+
+void MainWindow::pianokey_released(PianoKey key)
+{
+    qDebug() << "PianoKey released: " << key;
 }

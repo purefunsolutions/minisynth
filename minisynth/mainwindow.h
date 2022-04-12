@@ -11,6 +11,7 @@
 
 #include "circularbuffer.h"
 #include "pianokeyboard.h"
+#include "pianokeys.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,6 +28,9 @@ public:
 private slots:
     void on_frequencySlider_valueChanged(int value);
     void on_bytesRead(qint64 pos, qint64 count);
+
+    void pianokey_pressed(PianoKey key);
+    void pianokey_released(PianoKey key);
 
 private:
     std::unique_ptr <Ui::MainWindow> ui;
