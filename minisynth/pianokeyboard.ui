@@ -65,16 +65,6 @@
     </widget>
    </item>
    <item row="0" column="5">
-    <widget class="QPushButton" name="btnEs">
-     <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
-     </property>
-     <property name="text">
-      <string>E#</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="6">
     <widget class="QPushButton" name="btnF">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -84,7 +74,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="7">
+   <item row="0" column="6">
     <widget class="QPushButton" name="btnFs">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -94,7 +84,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="8">
+   <item row="0" column="7">
     <widget class="QPushButton" name="btnG">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -104,7 +94,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="9">
+   <item row="0" column="8">
     <widget class="QPushButton" name="btnGs">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -114,7 +104,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="10">
+   <item row="0" column="9">
     <widget class="QPushButton" name="btnH">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -124,7 +114,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="11">
+   <item row="0" column="10">
     <widget class="QPushButton" name="btnHs">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
@@ -134,7 +124,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="12">
+   <item row="0" column="11">
     <widget class="QPushButton" name="btnA">
      <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding" />
